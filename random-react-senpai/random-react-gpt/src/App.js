@@ -11,7 +11,7 @@ class App extends Component {
 
   componentDidMount() {
     spotifyApi.setClientId(process.env.REACT_APP_SPOTIFY_CLIENT_ID);
-    spotifyApi.setRedirectURI('http://localhost:58061');
+    spotifyApi.setRedirectURI('http://localhost:3000');
     spotifyApi.setScope('playlist-read-private');
     spotifyApi.setAccessToken('your_access_token');
     this.getPlaylistTracks(); // Fetch playlist tracks when component mounts
